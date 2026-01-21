@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  effi-api:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./effi_session.txt:/app/effi_session.txt
+    environment:
+      - EFFI_EMAIL=l_urbaez@yahoo.com
+      - EFFI_PASSWORD=DV2TE.e3kFp5anR
+      - COOKIE_FILE=effi_session.txt
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
