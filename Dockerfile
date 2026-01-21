@@ -28,6 +28,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
+RUN mkdir -p /app/session
 
 # Copy requirements and install Python deps
 COPY requirements.txt .
