@@ -2,6 +2,7 @@ FROM python:3.11-slim
 
 # Install system dependencies for Playwright
 RUN apt-get update && apt-get install -y \
+    curl \
     wget \
     gnupg \
     libglib2.0-0 \
@@ -40,7 +41,7 @@ RUN playwright install chromium
 # Copy app code
 COPY . .
 
-# Expose port
+# Expose port (Documentation only, usually overriden by compose)
 EXPOSE 5000
 
 # Run the app
