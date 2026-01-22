@@ -73,6 +73,7 @@ class ProductService:
                     
                     # Media
                     "url_foto": link.get('data-url_foto', ''),
+                    "image_url": link.get('data-url_foto', ''), # Alias for easier FE integration
                     "url_video": link.get('data-url_video', ''),
                     "descripcion_detallada": link.get('data-descripcion_detallada', ''),
                 }
