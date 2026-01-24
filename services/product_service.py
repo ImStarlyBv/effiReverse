@@ -33,10 +33,18 @@ class ProductService:
         products = []
         soup = BeautifulSoup(html, 'html.parser')
         
-        # Find all product rows - they have the "ver-detalles" or "modificar" links with data attributes
-        modificar_links = soup.find_all('a', class_='modificar')
+        # Products are in table rows <tr>
+        rows = soup.find_all('tr')
         
-        for link in modificar_links:
+        for row in rows:
+            # Look for a row that has a 'modificar' link (primary source of data)
+            link = row.find('a', class_='modificar')
+            # Look for 'ver-detalles' link (secondary source, often contains url_foto)
+            ver_detalles_link = row.find('a', class_='ver-detalles')
+            
+            if not link:
+                continue
+                
             try:
                 product = {
                     "id": int(link.get('data-id', 0)),
@@ -71,12 +79,18 @@ class ProductService:
                     # Tax
                     "json_impuestos": link.get('data-json_impuestos', '[]'),
                     
-                    # Media
+                    # Media - initially from 'modificar'
                     "url_foto": link.get('data-url_foto', ''),
-                    "image_url": link.get('data-url_foto', ''), # Alias for easier FE integration
                     "url_video": link.get('data-url_video', ''),
                     "descripcion_detallada": link.get('data-descripcion_detallada', ''),
                 }
+                
+                # If url_foto is empty or missing, try to get it from 'ver-detalles' link
+                if (not product["url_foto"] or product["url_foto"] == "") and ver_detalles_link:
+                    product["url_foto"] = ver_detalles_link.get('data-url_foto', '')
+                
+                # Double check for image_url alias
+                product["image_url"] = product["url_foto"]
                 
                 products.append(product)
                 

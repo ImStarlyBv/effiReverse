@@ -1,0 +1,171 @@
+ <div class="table-responsive">
+                           <table class="table table-hover table-bordered">
+                              <thead>
+                              <tr>
+                                 <th class="text-center">
+                                    <input type="checkbox" id="check_all" class="cursor-pointer"/>
+                                 </th>
+                                 <th class="text-center">Fecha</th>
+                                 <th class="text-center">Ubicación</th>
+                                 <th class="text-center">ID</th>
+                                 <th class="text-center">Cliente</th>
+                                 <th class="text-center">Terceros</th>
+                                 <th class="text-center">Totales</th>
+                                 <th class="text-center text-nowrap">Estado</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                                                               <tr class="
+                                                danger                                    ">
+                                    <td class="text-center">
+                                       <div class="btn-group">
+                                          <div class="btn btn-default btn-sm bg-gray btn-checkbox">
+                                             <input type="checkbox" name="remision_checkbox[]"
+                                                    class="remision_checkbox"
+                                                    data-sucursal="1"
+                                                    data-id="6"
+                                                    data-cliente="7"
+                                                    data-centro_costos="1"
+                                                    data-bodega="1"
+                                                    data-ecommerce=""
+                                                    data-divisa="DOP"
+                                                    data-ubicacion_venta=""
+                                                    data-id_guia_transporte=""
+                                                    data-dropshipping_distribuidor="1"
+                                                    data-vigente="0"
+                                             />
+                                          </div>
+                                          <button type="button"
+                                                  class="btn btn-default dropdown-toggle btn-sm bg-gray my-tooltip"
+                                                  data-toggle="dropdown" aria-haspopup="true"
+                                                  aria-expanded="false" accesskey="" data-placement="right"
+                                                  title="Opciones">
+                                             <i class="fa fa-caret-down"></i>
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                             <li><a href="#" class="ver-detalles"
+                                                    data-empresa="48745"
+                                                    data-prefijo_id="6"
+                                                    data-id="6"
+                                                    data-id_trans="uI5r062yUNBe5%2BGqjMpGNw%3D%3D"
+                                                    data-estado="Pendiente de facturar"
+                                                    data-convenio_dropshipping="tmuKRh3b"
+                                                    data-html_dropshipping="&lt;legend class=&quot;color-effi&quot;&gt;&lt;i class=&quot;glyphicon glyphicon-gift&quot;&gt;&lt;/i&gt; Dropshipping como distribuidor&lt;/legend&gt;&lt;p&gt;&lt;b&gt;Proveedor de Dropshipping:&lt;/b&gt;  22894 - Borau&lt;/p&gt;&lt;p&gt;&lt;b&gt;Compra interna al proveedor:&lt;/b&gt; &lt;a href=&quot;https://effi.com.co/app/remision_c?sucursal=1&amp;id=6&quot; target=&quot;_blank&quot;&gt;NOTA DE REMISI&Oacute;N DE COMPRA #6&lt;/a&gt; $900&lt;/p&gt;&lt;p&gt;&lt;b&gt;Venta externa del proveedor:&lt;/b&gt; REMISI&Oacute;N DE VENTA #14745 $900&lt;/p&gt;&lt;p&gt;&lt;b&gt;Valor a recaudar por el proveedor:&lt;/b&gt;  $2,900&lt;/p&gt;&lt;p&gt;&lt;b&gt;Convenio:&lt;/b&gt; &lt;a href=&quot;https://effi.com.co/app/convenio_dropshipping?codigo=tmuKRh3b&quot; target=&quot;_blank&quot;&gt;tmuKRh3b | SANTO DOMINGO/BODEGA PROPIA&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Estado transacci&oacute;n de Dropshipping:&lt;/b&gt;  Rechazada&lt;/p&gt;"
+                                                    data-datacredito="0"
+                                                    data-datacredito_negativo="0"
+                                                    data-guia=""
+                                                    data-sucursal_guia_transporte=""
+                                                    data-id_guia_transporte=""
+                                                    data-estado_efficommerce=""
+                                                    data-prefijo_id_relacion_despacho=""
+                                                    data-empresa_relacion_despacho=""
+                                                    data-nombre_empresa_relacion_despacho=""
+                                                    data-sucursal_relacion_despacho=""
+                                                    data-id_relacion_despacho=""
+                                                    data-observacion=""
+                                                    data-adjuntos=""
+                                                    data-html_t_origen=""
+                                                    data-responsable="Luis Urbaez (l_urbaez@yahoo.com)"
+                                                    data-fecha_modificar=""
+                                                    data-responsable_modificar=" ()"
+                                                    data-fecha_anular="2026-01-21 22:49:06"
+                                                    data-observacion_anular="yes"
+                                                    data-responsable_anular="Luis Urbaez (l_urbaez@yahoo.com)"
+                                                    data-vigente="0"
+                                                    data-id_venta_ecommerce=""
+                                                    data-name_venta_ecommerce=""
+                                                    data-url_venta_ecommerce=""
+                                                    data-ecommerce=""
+                                                    data-estado_contable="Sin comprobante contable"
+                                                    data-response_comprobante_contable=""
+                                                ><i class="fa fa-search-plus"></i> Ver más detalles</a>
+                                             </li>
+                                                                                             <li><a href="#" class="adjuntar"
+                                                       data-sucursal="1"
+                                                       data-id="uI5r062yUNBe5%2BGqjMpGNw%3D%3D"
+                                                       data-prefijo_id="6"
+                                                   ><i class="fa fa-paperclip"></i> Adjuntar archivo</a>
+                                                </li>
+                                                                                          <li><a href="#" class="ver-trazabilidad loading"
+                                                    data-sucursal="1"
+                                                    data-nombre_sucursal="Principal"
+                                                    data-prefijo_id="6"
+                                                    data-prefijo=""
+                                                    data-nombre_cliente="Luis Test"
+                                                    data-id="6"
+                                                    data-abreviacion="CIE"
+                                                    data-id_cliente="65414565478"
+                                                    data-total="2900.0000"
+                                                    data-telefono_cliente="8093304382|8093304382"
+                                                    data-fecha_entrega="2026-01-22"
+                                                    data-fecha_trans="2026-01-21 22:48:43"
+                                                ><i class="fa fa-exchange"></i> Ver trazabilidad</a>
+                                             </li>
+                                                                                          <li><a href="#" class="send_email"
+                                                    data-sucursal="1"
+                                                    data-prefijo=""
+                                                    data-id="6"
+                                                    data-prefijo_id="6"
+                                                    data-email="test@gmail.com"
+                                                >
+                                                   <i class="fa-solid fa-paper-plane"></i> Enviar por correo electrónico</a>
+                                             </li>
+                                             <li><a target="_blank"
+                                                    href="https://effi.com.co/app/remision_v/consultar_pdf?data=uI5r062yUNBe5%2BGqjMpGNw%3D%3D"
+                                                ><i class="fa fa-file-pdf"></i> Ver PDF</a>
+                                             </li>
+                                             <li><a target="_blank"
+                                                    href="https://effi.com.co/app/remision_v/consultar_pdf_manifiestos?data=IORXZlkBWO752TnCbA2EGg%3D%3D"
+                                                ><i class="fa fa-file-pdf"></i> Ver PDF con manifiestos</a>
+                                             </li>
+                                             <li><a
+                                                   href="https://effi.com.co/app/remision_v?printPDF=IORXZlkBWO752TnCbA2EGg%3D%3D"
+                                                ><i class="fa fa-file-pdf"></i> Imprimir en PDF</a>
+                                             </li>
+                                             <li><a
+                                                   href="https://effi.com.co/app/remision_v?printPDFManifiestos=IORXZlkBWO752TnCbA2EGg%3D%3D"
+                                                ><i class="fa fa-file-pdf"></i> Imprimir en PDF con manifiestos</a>
+                                             </li>
+                                             <li><a
+                                                   href="https://effi.com.co/app/remision_v?printPOS=IORXZlkBWO752TnCbA2EGg%3D%3D"
+                                                ><i class="fa fa-print"></i> Imprimir en POS</a>
+                                             </li>
+                                             <li><a
+                                                   href="https://effi.com.co/app/remision_v?printPOSGift=IORXZlkBWO752TnCbA2EGg%3D%3D"
+                                                ><i class="fa fa-gift"></i> Imprimir en POS (Certificado de regalo)</a>
+                                             </li>
+                                             <li><a target="_blank"
+                                                    href="https://effi.com.co/app/remision_v/consultar_rotulo_sticker?data=IORXZlkBWO752TnCbA2EGg%3D%3D"
+                                                ><i class="fa fa-file-pdf"></i> Ver rótulo sticker PDF</a>
+                                             </li>
+                                                                                                                                                                                                                                                                                                                                    <!--  el campo convenio Dropshipping no se debe precargar porque debe ser un campo manual muy consiente.  -->
+                                                   <li><a href="#" class="duplicar loading"
+                                                          data-sucursal="1"
+                                                          data-centro_costos="1"
+                                                          data-ubicacion_venta=""
+                                                          data-id="6"
+                                                          data-bodega="1"
+                                                          data-fecha_entrega="2026-01-22"
+                                                          data-divisa="DOP"
+                                                          data-trm="1"
+                                                          data-descuento_global="0.00"
+                                                          data-cliente="7"
+                                                          data-nombre_cliente="Luis Test"
+                                                          data-tercero=""
+                                                          data-nombre_tercero=""
+                                                          data-retencion_cliente=""
+                                                          data-t_precio_cliente="1"
+                                                          data-t_forma_pago_cliente="2"
+                                                          data-descuento_cliente="0.00"
+                                                          data-vendedor_cliente=""
+                                                          data-id_direccion="1"
+                                                          data-vendedor=""
+                                                          data-descuento_prontopago_divisa=""
+                                                          data-fecha_prontopago=""
+                                                          data-porcentaje_propina="0"
+                                                          data-garantia=""
+                                                          data-observacion=""
+                                                      ><i class="fa fa-copy"></i> Duplicar</a>
+                                                   </li>
+                                                                                                                                                                                                                                                                              </ul>
+                                       </div>

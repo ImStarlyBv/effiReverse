@@ -1,0 +1,20 @@
+{
+  "total_products": 2,
+  "products_with_photo": 2,
+  "sample_products": [
+    {
+      "id": 4,
+      "descripcion": "ROSA DEL PLACER VIBRADOR DE ROSAS PARA MUJER, ESTIMULADOR SEXUAL CON PUNTO DULCE",
+      "url_foto": "https://effierp.s3.us-east-2.amazonaws.com/public/images/app/articulos/48745_17690477760072_245825.jpg",
+      "image_url": "https://effierp.s3.us-east-2.amazonaws.com/public/images/app/articulos/48745_17690477760072_245825.jpg",
+      "photo_match": true
+    },
+    {
+      "id": 2,
+      "descripcion": "HER LOSS (INSPIRADO) - PERFUME VIRAL TIK TOK -",
+      "url_foto": "https://effierp.s3.us-east-2.amazonaws.com/public/images/app/articulos/48745_17667114721734_123445.jpg",
+      "image_url": "https://effierp.s3.us-east-2.amazonaws.com/public/images/app/articulos/48745_17667114721734_123445.jpg",
+      "photo_match": true
+    }
+  ]
+}
