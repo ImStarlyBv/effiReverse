@@ -105,13 +105,15 @@ Registers a new customer in the system.
     "nombre": "Jane Doe",
     "email": "jane@example.com",
     "telefono": "8095551212",
-    "direccion": "Calle Principal 123",
-    "dni_type": 21,
-    "ciudad": 62304
+    "direccion": "Calle Principal 123, frente al parque",
+    "pais": 61,
+    "provincia": 4131,
+    "ciudad": 62304,
+    "dni_type": 21
   }
   ```
 > [!NOTE]
-> `dni_type` defaults to 21 (Cédula) and `ciudad` to 62304 (Santo Domingo).
+> `pais` (default 61), `provincia` (default 981), and `ciudad` (default 62304) use the IDs obtained from the `/locations` endpoints. The `direccion` field should contain the detailed street address and references.
 
 ### Get Customer Addresses
 Retrieves all registered shipping addresses for a specific customer ID.
@@ -198,6 +200,47 @@ Handles the end-to-end process: searches for the customer, creates them if they 
         "precio": 1200
       }
     ]
+  }
+  ```
+
+---
+
+## 5. Location Discovery (Dynamic Forms)
+
+### List Provinces
+Retrieves all provinces for a country.
+
+- **URL:** `/locations/provinces`
+- **Method:** `GET`
+- **Query Parameters:**
+  - `pais_id` (int, default: 61): Country ID.
+- **Example Response:**
+  ```json
+  {
+    "count": 32,
+    "provinces": [
+      { "id": "4131", "nombre": "4131 - Santo Domingo" },
+      { "id": "1006", "nombre": "1006 - Santiago" }
+    ],
+    "success": true
+  }
+  ```
+
+### List Cities
+Retrieves all cities for a specific province. Use this to populate the `ciudad` field when creating a customer.
+
+- **URL:** `/locations/cities`
+- **Method:** `GET`
+- **Query Parameters:**
+  - `provincia_id` (int, required): The ID of the province.
+- **Example Response:**
+  ```json
+  {
+    "cities": [
+      { "id": "62304", "nombre": "62304 - SANTO DOMINGO" }
+    ],
+    "count": 1,
+    "success": true
   }
   ```
 

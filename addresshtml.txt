@@ -1,0 +1,26 @@
+<select name="provincia[]" class="form-control chosen-select provincia_MTER" style="display: none;">
+                                                    <option value="default">Seleccionar...</option><option value="979">979 - Azua</option><option value="980">980 - Bahoruco</option><option value="981" selected="">981 - Barahona</option><option value="982">982 - Dajabón</option><option value="983">983 - Distrito Nacional</option><option value="984">984 - Duarte</option><option value="985">985 - El Seibo</option><option value="986">986 - Elías Piña</option><option value="987">987 - Espaillat</option><option value="988">988 - Hato Mayor</option><option value="1000">1000 - Hermanas Mirabal (Salcedo)</option><option value="989">989 - Independencia</option><option value="990">990 - La Altagracia</option><option value="991">991 - La Romana</option><option value="992">992 - La Vega</option><option value="993">993 - Maria Trinidad Sanchez</option><option value="994">994 - Monseñor Nouel</option><option value="995">995 - Monte Cristi</option><option value="996">996 - Monte Plata</option><option value="997">997 - Pedernales</option><option value="998">998 - Peravia</option><option value="999">999 - Puerto Plata</option><option value="1001">1001 - Samaná</option><option value="1002">1002 - San Cristóbal</option><option value="4132">4132 - San José de Ocoa</option><option value="1003">1003 - San Juan</option><option value="1004">1004 - San Pedro de Macorís</option><option value="1005">1005 - Sánchez Ramírez</option><option value="1006">1006 - Santiago</option><option value="1007">1007 - Santiago Rodríguez</option><option value="4131">4131 - Santo Domingo</option><option value="1008">1008 - Valverde</option></select>
+
+
+
+
+                                                    with the value here we need to call this endpoint using the same headers as before and the values as a payload 
+
+                                                    provincia=4131 
+
+
+                                                    and the link is a get request
+
+                                                    https://effi.com.co/app/general/llena_ciudad
+
+
+
+                                                    and to get that html with the provincias so we always have updated data
+
+                                                    with this payload 
+                                                 pais=61
+
+                                                and the headers are the same as before, link 
+
+                                                
+https://effi.com.co/app/general/llena_provincia

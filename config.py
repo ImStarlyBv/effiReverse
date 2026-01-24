@@ -13,6 +13,8 @@ ENDPOINTS = {
     "search_customers": "/app/tercero/cliente/llena_cliente_buscar",
     "get_addresses": "/app/tercero/tercero/llena_direccion_tercero",
     "create_remision": "/app/remision_v/crear",
+    "get_provinces": "/app/general/llena_provincia",
+    "get_cities": "/app/general/llena_ciudad",
 }
 
 # Credentials

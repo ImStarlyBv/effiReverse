@@ -25,6 +25,7 @@ from routes.customer_routes import customer_bp
 from routes.order_routes import order_bp
 from routes.session_routes import session_bp
 from routes.product_routes import product_bp
+from routes.location_routes import location_bp
 
 app = Flask(__name__)
 
@@ -33,6 +34,7 @@ app.register_blueprint(session_bp, url_prefix='')
 app.register_blueprint(customer_bp, url_prefix='/customers')
 app.register_blueprint(order_bp, url_prefix='/orders')
 app.register_blueprint(product_bp, url_prefix='/products')
+app.register_blueprint(location_bp, url_prefix='/locations')
 
 
 @app.route('/health', methods=['GET'])
