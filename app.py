@@ -21,6 +21,7 @@ Endpoints:
 """
 
 from flask import Flask
+from flask_cors import CORS
 from routes.customer_routes import customer_bp
 from routes.order_routes import order_bp
 from routes.session_routes import session_bp
@@ -28,6 +29,7 @@ from routes.product_routes import product_bp
 from routes.location_routes import location_bp
 
 app = Flask(__name__)
+CORS(app)
 
 # Register blueprints
 app.register_blueprint(session_bp, url_prefix='')
