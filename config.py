@@ -28,7 +28,7 @@ COOKIE_FILE = os.getenv("COOKIE_FILE", "effi_session.txt")
 DEFAULT_CONVENIO_DROPSHIPPING = "Gaz9ffz8"
 DEFAULT_SESSION_EMPRESA = "48745"
 DEFAULT_RESPONSABLE = EMAIL 
-#holi
+#holi babys
 
 # Request headers
 HEADERS = {
