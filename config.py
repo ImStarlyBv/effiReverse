@@ -18,8 +18,8 @@ ENDPOINTS = {
 }
 
 # Credentials
-EMAIL = os.getenv("EFFI_EMAIL", "l_urbaez@yahoo.com")
-PASSWORD = os.getenv("EFFI_PASSWORD", "DV2TE.e3kFp5anR")
+EMAIL = os.getenv("EFFI_EMAIL", "***********")
+PASSWORD = os.getenv("EFFI_PASSWORD", ""***********")")
 
 # Session
 COOKIE_FILE = os.getenv("COOKIE_FILE", "effi_session.txt")
